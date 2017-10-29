@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="node-modules/systemjs/dist/system.js"></script>
+    <script src="config/system.config.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.8.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.8.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.8.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.8.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.8.0/firebase-storage.js"></script>
+    <script src="config/firebase.config.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
+    <script src="node-modules/navigo/lib/navigo.min.js"></script>
+    <!--Libraries-->
+    <script src="./node-modules/jquery/dist/jquery.js"></script>
+    <script src="./node-modules/toastr/toastr.js"></script>
+
+    <!--CSS files for some libraries-->
+    <link rel="stylesheet" href="./node-modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./node-modules/bootstrap/dist/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="./node-modules/toastr/package/toastr.css">
+    <link rel="stylesheet" href="./node-modules/jquery-ui-dist/jquery-ui.css">
+    <link rel="stylesheet" href="./css/app.css">
+
+    <link rel="shortcut icon" type="image/png" href="images/icons/favicon.png"/>
+
+    
+    <script type="text/javascript" src="./flaviusmatis-simplePagination.js-e32c66e/jquery.simplePagination.js"></script>
+
+    <!--Facebook sharing markups-->
+    <!-- <meta property="og:url" content="https://workout-a-day.firebaseapp.com/#/trainings"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="Train hard every day!"/>
+    <meta property="og:description" content="Check out our new workouts and became strong and healthy. We are waiting for you :)"/>
+    <meta property="og:image" content="https://i.imgur.com/3kU1X0O.jpg"/> -->
+
+    <title>Workout A Day</title>
+</head>
+
+<body>
+<!--Facebook API-->
+<!-- <div id="fb-root"></div>
+<script>
+    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script> -->
+<!--End Facebook API-->
+<span class="mainLogo"></span>
+<div id="root" class="container">
+    <header>
+        <nav class="navbar">
+            <!-- <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1"
+                        aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand"><strong>Workout A Day</strong></a>
+            </div> -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="navv navbar-nav navbar-left">
+                    <li><a href="#/home" id="homeBtn">HOME</a></li>
+                    <li class="dropdownt">
+                        <a class="dropbtn" href="#/entertainment" id="galleryBtn">ENTERTAINMENT</a>
+                        <ul class="dropdownt-content">
+                            <li class="sub"><a href="#/entertainment/PS3">> PS3</a></li>
+                            <li class="sub"><a href="#/entertainment/PS4">> PS4</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdownt"><a class="dropbtn" href="#/fashion" id="trainingsBtn">FASHION</a></li>
+                    <li class="dropdownt"><a class="dropbtn" href="#/fragrances" id="videosBtn">FRAGRANCES</a></li>
+                </ul>
+                <div class="navbar-form navbar-right">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search this website...">
+                        <div class="input-group-btn">
+                            <span class="btn btn-defaultt">
+                              
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <div id="content">
+    </div>
+
+    <footer class="text-center navbar-fixed-bottom">
+        
+    </footer>
+</div>
+
+
+<script>
+    System.import("index");
+    firebase.initializeApp(config);
+</script>
+
+</body>
+
+</html>

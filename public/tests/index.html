@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Workout A Day Tests</title>
+    <link rel="shortcut icon" type="image/png" href="../images/icons/favicon.png"/>
+    <link rel="stylesheet" href="../node-modules/mocha/mocha.css"/>
+</head>
+<body>
+<div id="mocha"></div>
+
+<!--Testing-->
+<script src="../node-modules/mocha/mocha.js"></script>
+<script src="../node-modules/chai/chai.js"></script>
+<script src="../node-modules/sinon/pkg/sinon.js"></script>
+<script src="../node-modules/sinon-chai/lib/sinon-chai.js"></script>
+
+<!--Libraries-->
+<script src="../node-modules/systemjs/dist/system.js"></script>
+<script src="../config/system.config.js"></script>
+<script src="../node-modules/jquery/dist/jquery.js"></script>
+<script src="../node-modules/toastr/toastr.js"></script>
+<script src="../node-modules/navigo/lib/navigo.min.js"></script>
+<script src="../node-modules/handlebars/dist/handlebars.js"></script>
+<script src="../node-modules/jquery-ui-dist/jquery-ui.js"></script>
+
+<!--App (add every testing file in system.config map)-->
+<script>
+    SystemJS.import('registerControllerTests');
+    SystemJS.import('userControllerTests');
+    SystemJS.import('trainingsControllerTests');
+    SystemJS.import('videosControllerTests');
+    SystemJS.import('changeAvatarControllerTests');
+    SystemJS.import('changePasswordControllerTests');
+    SystemJS.import('indexTests');
+    SystemJS.import('templatesTests');
+    SystemJS.import('loginControllerTests');
+</script>
+
+
+</body>
+</html>

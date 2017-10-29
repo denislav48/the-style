@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "telerik-917bd",
+    "staging": "telerik-917bd"
+  }
+}

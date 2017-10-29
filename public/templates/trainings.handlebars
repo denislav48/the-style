@@ -1,0 +1,28 @@
+<fieldset>
+    <legend align="center">Trainings</legend>
+    <!--Array of trainings-->
+    {{#this}}
+        <div class="col-sm-4">
+            <h3 align="center" class="trainingName">{{trainingName}}</h3>
+            <div class="list-group">
+                {{#exercises}}
+                    <div class="list-group-item" data-index="{{@index}}">
+                        <div class="workout" data-toggle="modal" data-target="#myModal" data-imgsrc="{{imgSrc}}">
+                            <span data-workoutname="{{title}}">{{title}} : {{description}}</span>
+                        </div>
+                        <img class="star hidden" src="../images/icons/likeOff.png">
+                    </div>
+                {{/exercises}}
+            </div>
+        </div>
+    {{/this}}
+    <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body" align="center">
+                    <img src="" class="img-responsive" id="currentImage">
+                </div>
+            </div>
+        </div>
+    </div>
+</fieldset>

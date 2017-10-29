@@ -1,0 +1,115 @@
+
+<div class="hole-page">
+    <div class="post">
+        <div class="left-side">
+            <div class="date-box-category">
+                <div class="cat-date">
+            <div class="category">
+                <h4>{{this.0.mainCategory}}</h4>
+            </div>
+             <div class="date">
+                <p>{{this.0.month}}</p>
+                <p>{{this.0.date}}</p>
+            </div>
+            </div>
+            </div>
+            <h3>TAGS</h3>
+            <ul class="tags">
+                {{#if this.0.category}}
+                <li>{{this.0.category}}</li>
+                {{/if}}
+                <li>{{this.0.mainCategory}}</li>
+            </ul>
+            <h3>RELEATED POSTS</h3>
+            <ul class="related-posts">
+                <li>>>&nbsp; fojhofkhofhkf</li>
+                <li>>>&nbsp; jhfjhsig ege</li>
+                <li>>>&nbsp; chfhrhrjrjrjrjrtj</li>
+            </ul>
+            <h3>SHARE THIS</h3>
+            <div class="social-logos">
+                <span class="twit"></span>
+                <span class="fb"></span>
+                <span class="other-social"></span>
+                <span class="digg"></span>
+                <span class="fa-social"></span>
+            </div>
+        </div>
+        <div class="right-side">
+            <h2>{{this.0.title}}</h2>
+            <h4>Posted by fkjfkfkkjkdglegel</h4>
+            <article class="bb">{{this.0.article}}</article>
+        </div>
+    </div>
+    <aside>
+        <table class="recent-popular-random" col>
+            <thead>
+            <tr>
+                <th>RECENT</th>
+                <th>POPULAR</th>
+                <th>RANDOM</th>
+            </tr>
+            </thead>
+            <tbody>
+                
+                {{#this}}
+                {{#if this.rtitle}}
+            <tr>
+                <td colspan="3">
+                    <a href="{{url}}">
+                    <img class="avatar" src="{{ruserPic}}">
+                    <h4>{{rtitle}}</h4>
+                    <h5>Posted by kjkjkjj</h5>
+                    </a>
+                    </td>
+            </tr>
+          
+            {{!-- <tr>
+                <td colspan="3">{{this.1.rtitle}}</td>
+            </tr>
+            <tr>
+                <td colspan="3">{{this.2.rtitle}}</td>
+            </tr>
+            <tr>
+                <td colspan="3">{{this.3.rtitle}}</td>
+            </tr> --}}
+            {{/if}}
+              {{/this}}
+            </tbody>
+
+        </table>
+        <div class="custom-text"></div>
+        <div class="custom-text"></div>
+    </aside>
+    <div class="comments">
+        <div class="leaved-comments">
+        <h2>COMMENTS</h2>
+        <hr>
+            {{#each this.0.comments}}
+            <div class="single-comment">
+                <div class="user-avat">
+                    {{#if url}}
+            <img class="user-ava" src="{{url}}" >
+            {{else}}
+            <img class="user-ava" src="https://vignette.wikia.nocookie.net/micronations/images/4/41/No-Avatar-High-Definition.jpg/revision/latest?cb=20140823100428">
+            {{/if}}
+                </div>
+            <h3>{{user}}</h3>
+            <p>{{comment}}</p>
+            
+            </div>
+            <hr>
+            {{/each}}
+        
+        </div>
+        <div class="leave-comment">
+            <form>
+            <h2>LEAVE A COMMENT</h2>
+            <input class="user-name input-style" type="text" placeholder="Enter username">
+            <input class="user-avatar input-style" type="text" placeholder="Enter avatar url">
+            <textarea class="user-comment input-style" type="text" placeholder="Comment..."></textarea>
+            <button class="submit-comment" type="submit">SUBMIT</button>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,43 @@
+{
+  "name": "workout-a-day",
+  "version": "1.0.0",
+  "description": "**Team Puca members:**",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/niksmanov/Workout-A-Day.git"
+  },
+  "keywords": [
+    "js",
+    "apps",
+    "teamwork"
+  ],
+  "author": "Team Puca",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/niksmanov/Workout-A-Day/issues"
+  },
+  "homepage": "https://github.com/niksmanov/Workout-A-Day#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "handlebars": "^4.0.6",
+    "handlebars-paginate": "^0.1.0",
+    "jquery": "^3.2.1",
+    "jquery-ui-dist": "^1.12.1",
+    "navigo": "^4.6.2",
+    "paginationjs": "^2.0.8",
+    "systemjs": "^0.20.12",
+    "systemjs-plugin-babel": "0.0.21",
+    "toastr": "^2.1.2"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.3.0",
+    "sinon": "^2.2.0",
+    "sinon-chai": "^2.10.0"
+  }
+}

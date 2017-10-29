@@ -1,0 +1,40 @@
+<p class="link"><a class="link" href="#/home">Home</a> >> <a class="link" href="#/{{this.0.mainCategory}}">{{this.0.mainCategory}}</a> >> <a href="#/{{this.0.mainCategory}}/{{this.0.category}}" class="link-active">{{this.0.category}}</a></p>
+
+{{#this}}
+<div class="main-content">
+{{#if this.size}}
+    <div  class="boxx big-boxx">
+        <div class="date-category-big">
+            <div class="category">
+                <h4>{{mainCategory}}</h4>
+            </div>
+             <div class="date">
+                <p>{{month}}</p>
+                <p>{{date}}</p>
+            </div>
+        </div>
+        <h3>{{title}}</h3>
+        <h4>Posted by</h4>
+        <hr>
+        <div class="articles">{{article}}</div>
+    </div>
+{{else}}
+    <div class="boxx small-boxx">
+        <div class="datee-category-small">
+            <div class="category">
+                <h4>{{mainCategory}}</h4>
+            </div>
+            <div class="date">
+                <p>{{month}}</p>
+                <p>{{date}}</p>
+            </div>
+        </div>
+          <h3>{{title}}</h3>
+          <h4>Posted by</h4>
+          <hr>
+          <div class="articles">{{article}}</div>
+    </div>
+    
+{{/if}}
+</div>
+{{/this}}
