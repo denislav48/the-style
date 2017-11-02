@@ -66,7 +66,7 @@ const homeController = function() {
         }
         templates.getPage('home', reversedArcticles)
         .then(() => {
-            
+
              $('.boxx').click(function(ev){
                  let i = $('.boxx').index($(ev.target).closest('.boxx'));
                  window.location.href = reversedArcticles[i].url;
